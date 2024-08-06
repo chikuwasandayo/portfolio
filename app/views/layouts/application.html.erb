@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ポリ速</title>
+    <%= favicon_link_tag('favicon.ico') %>
+  
+
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <body>
+  <h1>
+    <%= image_tag 'school.png', class: 'rogo' %>
+    ポリテク速報📰
+  </h1>
+    <% if current_user %>
+      <div class="oya">
+        <%= link_to '一覧', titles_path, class: 'ko' %>
+        <%= link_to 'ユーザ一覧', users_path, class: 'ko' %>
+        <%= link_to 'ログアウト', logout_path, method: :delete, data: { confirm: '本当にログアウトしますか？' }, class: 'ko' %>
+      </div>
+    <% else %>
+       
+    <% end %>
+
+    <%= yield %>
+  </body>
+</html>

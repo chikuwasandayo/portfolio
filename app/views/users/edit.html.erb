@@ -1,0 +1,25 @@
+<%if current_user.id == 1%>
+<h1>ユーザー編集</h1>
+<%= link_to 'ユーザー一覧', users_path,class:'b4' %>
+
+<%= form_with model: @user, local: true do |f| %>
+
+
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.text_field :email, required: true %><br>
+  </div>
+  <div class="field">
+    <%= f.label :password %><br>
+    <%= f.password_field :password %><br>
+  </div>
+  <div class="field">
+    <%= f.label :password_confirmation %><br>
+    <%= f.password_field :password_confirmation %><br>
+  </div>
+  
+  <div class="actions">
+    <%= f.submit'登録',class:'b4' %><br>
+  </div>
+<% end %>
+<% end %>

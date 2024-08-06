@@ -1,0 +1,37 @@
+
+
+<%= link_to'新しくスレッドを立てる',new_title_path,class:'b3' %>
+
+<table>
+  <thead>
+   <tr>
+    <th class= "b1">スレッドタイトル名</th>
+   </tr>
+  </thead>
+  
+
+ <tbody>
+  <% @titles.each do |title| %>
+
+  <tr ><td class="a4">　</td></tr>
+   <tr>
+     <td><%= title.created_at%></td>
+   </tr>
+
+   <tr>
+     <td class ="a1"><%= link_to title_path(title),class: 'a3' do %>
+     <%=title.tname%>
+     <%end%>
+     </td>
+   </tr>
+   <%if current_user.id == 1%>
+   <tr>
+     <td><%= link_to '消去', title, class:'b4',method: :delete, data: { confirm: '削除しますか？' } %></td>
+   </tr>
+   <%end%>
+
+  
+  <% end %>
+  </tbody>
+</table>
+

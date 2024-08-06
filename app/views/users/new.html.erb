@@ -1,0 +1,26 @@
+<h1>ユーザーの新規登録</h1>
+
+
+<%= form_with model: @user, local: true do |f| %>
+
+<div class="a6" >
+  <div class="field">
+    <th>・メールアドレス </th><span class= "a5">必須</span><br>
+    <%= f.text_field :email, required: true,class:'text' %><br>
+  </div>
+  <div class="field">
+    <tr> ・パスワード </tr><span class= "a5">必須</span><br>
+    <%= f.password_field :password ,class:'text'%><br>
+  </div>
+  <div class="field">
+    <tr>・パスワード確認 </tr><span class= "a5">必須</span><br>
+    <tr>（上と同じパスワードを入力してください）</tr><br>
+    <%= f.password_field :password_confirmation,class:'text' %><br>
+  </div>
+  
+  <div class="actions">
+    <%= f.submit '登録する', class: 'b5' %><br>
+  </div>
+</div>
+<% end %>
+

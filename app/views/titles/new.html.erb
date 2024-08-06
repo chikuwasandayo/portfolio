@@ -1,0 +1,18 @@
+<h3 class="c1">新しいスレを立てる</h3>
+
+
+<%= form_with model: @title, local: true do |f| %>
+<div class="a8">
+<div class="field">
+  <span class= "a9">スレッド名</span><br>
+  <%= f.text_area:tname,class:'b7',placeholder:"スレッド名を入力してください"%><br>
+</div>
+
+  <div class="actions">
+    <%= f.submit'作成する',class:'b6'%>
+  </div>
+<% end %>
+</div>
+
+
+

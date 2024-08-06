@@ -1,0 +1,27 @@
+<h1>詳細表示</h1>
+<%= link_to '一覧', users_path,class:'b3' %>
+
+<table>
+  <tbody>
+    <tr>
+      <th>ユーザーID</th>
+      <td><%= @user.id %></td>
+    </tr>
+
+    <tr>
+      <th>メールアドレス</th>
+      <td><%= @user.email %></td>
+    </tr>
+    <tr>
+      <th>ユーザー作成日</th>
+      <td><%= @user.created_at %></td>
+    </tr>
+    <tr>
+      <th>ユーザー更新日</th>
+      <td><%= @user.updated_at %></td>
+    </tr>
+  </tbody>
+</table>
+
+
+

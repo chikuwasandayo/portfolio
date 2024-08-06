@@ -1,0 +1,24 @@
+<div class="c1">
+<h3>ログインして下さい</h2>
+</div>
+
+<div class="a7">
+<%= link_to '新規登録', new_user_path,class:'b5' %>
+
+<%= form_with scope: :session, local: true do |f| %>
+
+  <div class="field">
+    <tr>メールアドレス</tr><br>
+    <%= f.text_field :email,class:'text' %><br>
+  </div>
+
+  <div class="field">
+    <tr>パスワード</tr> <br>
+    <%= f.text_field :password,class:'text'  %><br>
+  </div>
+
+  <div class="actions">
+    <%= f.submit'ログイン',class:'b5' %>
+  </div>
+</div>
+<% end %>

@@ -1,0 +1,26 @@
+<body>
+<h1>👤ユーザー一覧</h1>
+
+<%= link_to '新規登録', new_user_path,class: 'b3' %>
+
+<table>
+  
+  <thead>
+    <tr>
+      <th>メールアドレス</th>
+    </tr>
+  </thead>
+ 
+  <tbody>
+    <% @users.each do|user| %>
+    
+        <tr><td><%=link_to user.email,user,class:'b4'%></td>
+        <%if current_user.id == 1%>
+        <td><%= link_to'編集',edit_user_path(user),class:'b4'%></td>
+        <td><%= link_to '消去',user,class:'b4',method: :delete, data: { confirm: '削除しますか？' } %></td></tr>
+        <%end%>
+      
+    <% end %>
+  </tbody>
+</table>
+</body>

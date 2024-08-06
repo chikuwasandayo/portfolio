@@ -1,0 +1,339 @@
+@charset "utf-8";
+/* 共通 */
+html{
+    font-size: 100%;
+
+}
+body{
+    font-family: "Yu Gothic Medium", "游ゴシック Medium",YuGothic "游ゴシック体", "ヒラギノ角ゴ Pro W3",sans-serif;
+    line-height: 1.7;
+   
+}
+
+
+
+
+.wrapper{
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 0 4%;
+}
+.page-title {
+    font-size: 2rem;
+    font-family: 'Philosopher', serif;
+    text-transform: uppercase;
+        font-weight: normal;
+    }
+
+
+.a1 {
+    font-size: 1.4rem;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 10px 20px; 
+    border-radius: 20px;
+    background: #0894ff;
+    font-family: 'Times New Roman', Times, serif;
+    display: block; 
+    overflow: hidden; 
+    word-wrap: break-word; 
+  }
+.a1:hover{
+    background: rgb(1, 37, 114);
+}
+
+
+.a2{
+    text-align: center;
+    border-bottom: #00ffff 5px solid;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+.a3 {
+    display: block; 
+    text-decoration: none; 
+    color: #fff;
+  }
+
+.a4{
+    text-align: center;
+    border-top: #00ffff 5px solid;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+.a5{
+    text-align: center;
+    background-color: #cf2300;
+    border-radius:5px ;
+    color: honeydew;
+    padding: 2px 5px;
+    margin: 5px;
+}
+.a6{
+    border:solid red;
+    margin: 5px;
+    padding: 10px;
+    max-width: 30%;
+    min-width: 200px;
+    background-color: #ffe4df;
+}
+.a7{
+    border:solid rgba(0, 162, 255, 0.981);
+    margin: 5px;
+    padding: 10px;
+    max-width: 30%;
+    min-width: 200px;
+    background-color: #a6ffa2f2;
+}
+
+.a8{
+    border:solid rgba(146, 255, 182, 0.981);
+    margin: 5px;
+    padding: 10px;
+    max-width: 30%;
+    min-width: 370px;
+    background-color: #a2eefff2;
+
+}
+
+.a9{
+    text-align: center;
+    border-left: #1900ff 5px solid;
+    margin:  auto 0;
+    padding: 2px 5px;
+    height: 5px;
+}
+
+
+.b1{
+    text-align: left;
+}
+.b2 {
+    position: relative;
+    display: inline-block;
+    margin: 1.5em 0 1.5em 15px;
+    padding: 7px 10px;
+    min-width: 120px;
+    max-width: 100%;
+    color: #555;
+    font-size: 16px;
+    border-radius: 20px;
+    background: #08ff90;
+  }
+  
+.b2:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -25px;
+    margin-top: -15px;
+    border: 15px solid transparent;
+    border-right: 15px solid #08ff90;
+  }
+.b2 p {
+    margin: 10px;
+    padding: 0;
+  }
+
+.b3{
+    position: relative;
+    display: inline-block;
+    margin:10px 1%;
+    
+    padding: 7px 10px;
+    min-width: 120px;
+    max-width: 100%;
+    color: #842300;
+    font-size: 16px;
+    border-radius: 20px;
+    background: #08ff90;
+    text-align: center;
+
+}
+.b3:hover {
+    background-color: #00a13e; 
+    color: #f2f2f2;
+ }
+ 
+ 
+.b4{
+    position: relative;
+    display: inline-block;
+    margin: 10px 0px;
+    padding: 7px 10px;
+    min-width: 120px;
+    max-width: 100%;
+    color: #6a3c00;
+    font-size: 16px;
+    border-radius: 20px;
+    background: #ffc908;
+    text-align: center;
+
+}
+.b4:hover {
+    background-color: #c1cf00; 
+    color: #f2f2f2;
+ }
+.b5{
+    position: relative;
+    display: inline-block;
+    margin: 10px 0px;
+    padding: 7px auto;
+    width: 100%;
+    color: #e2ffde;
+    font-size: 16px;
+    border-radius: 20px;
+    background: #ff7f08fc;
+    text-align: center;
+
+}
+
+
+.b5:hover {
+    background-color: #cf2300; 
+    color: #f2f2f2;
+ }
+
+
+
+.b6{
+    display: inline-block;
+    margin: 10px 0px;
+    padding: 7px auto;
+    width: 100%;
+    color: #842300;
+    font-size: 16px;
+    border-radius: 20px;
+    background: #08ff90;
+    text-align: center;
+
+}
+
+
+.b6:hover {
+    background-color: #00a13e; 
+    color: #f2f2f2;
+ }
+
+
+.b7{
+    display: inline-block;
+    margin: 10px 0px;
+    padding: 7px 10px;
+    width: 95%;
+    height: 100px;
+    font-size: 20px;
+    border-radius: 20px;
+    background: #08ff90;
+    text-align: left;
+
+
+}
+
+
+
+
+.c1{
+    border-radius: 20px 100px 100px 20px ;
+    -moz-border-radius: 20px 100px 100px 20px;
+    -webkit-border-radous:20px 100px 100px 20px;
+    background-color: #4aff08;
+    padding: 1px;
+    margin: 10px;
+    text-align: center;
+    
+    max-width: 30%;
+    min-width: 200px;
+    
+}
+
+.c2{
+    border: solid ;
+    padding: 3px;
+    margin: auto;
+}
+
+
+.oya{
+    display: flex;
+    flex-direction: row;
+}
+
+.oya .ko {
+    width: 150px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    background-color: #3378fa;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 6px;
+    margin-left: 1%;
+    color: white; 
+    text-decoration: none; 
+    }
+ .ko:hover {
+    background-color: #2851a3; 
+ }  
+
+
+
+ .text{
+    display: inline-block;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #999;
+    box-sizing: border-box;
+    background: #f2f2f2;
+    margin: 0.5em 0;
+    line-height: 1;
+    height: 6%;
+
+ }
+
+.rogo{
+    width: 50px;
+    height: 50px;
+    
+    transform: translateY(20%);
+    
+
+}
+
+
+
+
+
+
+
+  
+
+  /* モバイル版 */
+  @media(max-width: 600px){
+    .page-title {
+        font-size: 1.3rem;
+        font-family: 'Philosopher', serif;
+        text-transform: uppercase;
+            font-weight: normal;
+            
+                width: 400px;
+                height: 80px;
+                line-height: 90px;
+               
+              }
+
+          
+
+       
+        
+
+  }
+
+
+  
+    
+  
+
+
+

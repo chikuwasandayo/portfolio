@@ -1,0 +1,45 @@
+
+
+
+
+
+
+<%= form_with model: [@title, @comment], local: true do |f| %>
+<div class="a8">
+<div class="field">
+  <span class="a9">コメント</span>
+  <%= f.text_area :message, class: 'b7', rows: 5,placeholder:"コメントを入力してください" %><br>
+  <%= f.hidden_field :title_id, value: @title.id %><br>
+</div>
+
+
+  <div class="actions">
+    <%= f.submit'投稿する',class:'b6'%>
+  </div>
+ </div>
+<h1><%= @title.tname%></h1>
+ <tbody>
+ 
+ <% a = 0%>
+  <% @comments.each do |comment| %>
+   <% a+= 1%>
+   <tr><td><%= a%>:</td>
+    <td><%=  comment.created_at %></td><br>
+    <div class= "b2">
+    <p><td ><%=  comment.message %></td></p>
+    </div>
+    <%if current_user.id == 1%>
+    <td><%= link_to '消去', title_comment_path(comment.title_id, comment),class:'b4', method: :delete, data: { confirm: '削除しますか？' } %></td>
+    <%end%>
+    <br>
+
+  </tr>
+  <% end %>
+  
+  </tbody>
+
+
+<% end %>
+
+
+
